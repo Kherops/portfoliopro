@@ -11,7 +11,7 @@ export default defineConfig(({ command }) => {
   }
   
   if (command !== 'serve') {
-    config.base = '/louis-proton-portfolio/'
+    config.base = '/portfoliopro/'
   }
   
   return config
