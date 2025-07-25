@@ -7,7 +7,7 @@ const Footer = () => {
   }
 
   const handleCVOpen = () => {
-    window.open('/curriculum vitae.pdf', '_blank')
+    window.open('/CV_LOUIS_PROTON.pdf', '_blank')
   }
 
   return (

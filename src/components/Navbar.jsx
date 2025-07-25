@@ -8,7 +8,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
   const handleCVOpen = () => {
     // Open CV in new window
-    window.open('/curriculum vitae.pdf', '_blank')
+    window.open('/CV_LOUIS_PROTON.pdf', '_blank')
   }
 
   return (
