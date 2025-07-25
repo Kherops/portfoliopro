@@ -53,13 +53,18 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               </button>
             </div>
 
-            {/* CV Download Button */}
+            {/* ✅ CV Download Button (fix centré mobile + desktop) */}
             <button
               onClick={handleCVOpen}
-              className="btn-primary flex items-center space-x-2"
+              className="btn-primary inline-flex items-center justify-center h-10 px-4 rounded-md"
             >
-              <span className="hidden sm:inline">Voir le CV</span>
-              <span className="sm:hidden">CV</span>
+              {/* Desktop */}
+              <span className="hidden sm:inline-block font-semibold text-sm">Voir le CV</span>
+
+              {/* Mobile */}
+              <span className="sm:hidden inline-block font-semibold text-sm leading-none h-full flex items-center justify-center">
+                CV
+              </span>
             </button>
 
             {/* Dark Mode Toggle */}

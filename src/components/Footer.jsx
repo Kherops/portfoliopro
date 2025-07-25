@@ -69,9 +69,7 @@ const Footer = () => {
             {/* Copyright & Credits */}
             <div className="text-center text-gray-500 dark:text-gray-400">
               <p className="flex items-center justify-center gap-1 text-sm">
-                © 2025 Louis PROTON. Développé avec 
-                <Heart size={14} className="text-red-500" />
-                et React + Tailwind CSS
+                © 2025 Louis PROTON
               </p>
               <p className="text-xs mt-2">
                 Développeur Web & Futur Étudiant en Cybersécurité
