@@ -74,7 +74,7 @@ const Footer = () => {
                 et React + Tailwind CSS
               </p>
               <p className="text-xs mt-2">
-                Développeur Web & Futur Expert en Cybersécurité
+                Développeur Web & Futur Étudiant en Cybersécurité
               </p>
             </div>
           </div>
