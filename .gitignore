@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules/
 dist/
 .vite/
@@ -7,3 +8,9 @@ node_modules/
 node_modules/
 
 portfoliopro/
+=======
+node_modules/
+dist/
+.vite/
+
+>>>>>>> 12fbb07 (Clean: stop tracking node_modules + maj contenu)

@@ -3,12 +3,16 @@ import { Github, Linkedin, Mail, Sun, Moon } from 'lucide-react'
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const handleEmailClick = () => {
-    window.location.href = 'mailto:louisproton2077@gmail.com'
+    window.location.href = 'mailto:contact@louisproton.com'
   }
 
   const handleCVOpen = () => {
     // Open CV in new window
+<<<<<<< HEAD
     window.open('/CV_LOUIS_PROTON.pdf', '_blank')
+=======
+    window.open('public/CV LOUIS PROTON 16.09.2025.pdf', '_blank')
+>>>>>>> 12fbb07 (Clean: stop tracking node_modules + maj contenu)
   }
 
   return (
