@@ -46,7 +46,7 @@ const About = () => {
             À propos
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Découvrez mon parcours, mes compétences et ce qui me passionne dans le développement et la cybersécurité.
+            Découvrez mon parcours, mes compétences et ce qui me passionne dans la cybersécurité et le développement.
           </p>
         </div>
 

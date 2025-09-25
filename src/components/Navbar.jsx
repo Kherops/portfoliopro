@@ -8,7 +8,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
   const handleCVOpen = () => {
     // Open CV in new window
-    window.open('public/CV LOUIS PROTON 16.09.2025.pdf', '_blank')
+    window.open('public/CV LOUIS PROTON 19.09.2025.pdf', '_blank')
   }
 
   return (
@@ -36,7 +36,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 <Github size={20} />
               </a>
               <a
-                href="https://www.linkedin.com/in/louis-proton-73917b341/"
+                href="https://www.linkedin.com/in/louis-proton/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-accent transition-colors duration-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -89,7 +89,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <Github size={20} />
           </a>
           <a
-            href="https://www.linkedin.com/in/louis-proton-73917b341/"
+            href="https://www.linkedin.com/in/louis-proton/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 text-gray-600 dark:text-gray-400 hover:text-accent dark:hover:text-accent transition-colors duration-200"

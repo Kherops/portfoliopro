@@ -7,7 +7,7 @@ const Footer = () => {
   }
 
   const handleCVOpen = () => {
-    window.open('/curriculum vitae.pdf', '_blank')
+    window.open('/CV LOUIS PROTON 19.09.2025.pdf', '_blank')
   }
 
   return (
@@ -37,7 +37,7 @@ const Footer = () => {
                 </a>
                 
                 <a
-                  href="https://www.linkedin.com/in/louis-proton-73917b341/"
+                  href="https://www.linkedin.com/in/louis-proton/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 rounded-lg hover:text-accent dark:hover:text-accent transition-colors duration-200 shadow-sm hover:shadow-md"
