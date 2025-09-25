@@ -1,0 +1,46 @@
+{
+  "name": "securecontact",
+  "version": "1.0.0",
+  "description": "A secure, self-hostable contact form for portfolio and professional websites",
+  "main": "index.js",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "start:backend": "cd backend && npm start",
+    "start": "npm run start:backend",
+    "setup": "npm run install:all && npm run build:frontend",
+    "deploy": "chmod +x deploy.sh && ./deploy.sh"
+  },
+  "keywords": [
+    "contact-form",
+    "security",
+    "react",
+    "express",
+    "postgresql",
+    "self-hosted",
+    "portfolio",
+    "fullstack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/securecontact.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/securecontact/issues"
+  },
+  "homepage": "https://github.com/yourusername/securecontact#readme"
+}

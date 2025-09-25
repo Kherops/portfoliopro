@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: securecontact-db
+    environment:
+      POSTGRES_DB: securecontact
+      POSTGRES_USER: securecontact
+      POSTGRES_PASSWORD: securecontact_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    networks:
+      - securecontact-network
+
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: securecontact-api
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgresql://securecontact:securecontact_password@postgres:5432/securecontact
+      - JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+      - ADMIN_PASSWORD=your-secure-admin-password
+      - PORT=5000
+      - FRONTEND_URL=http://localhost:3000
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+    networks:
+      - securecontact-network
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+
+  # Frontend (for development)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: securecontact-frontend
+    environment:
+      - VITE_API_URL=http://localhost:5000/api
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - securecontact-network
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+volumes:
+  postgres_data:
+
+networks:
+  securecontact-network:
+    driver: bridge
