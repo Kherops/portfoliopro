@@ -11,7 +11,9 @@ export default defineConfig(({ command }) => {
   }
   
   if (command !== 'serve') {
-    config.base = '/louis-proton-portfolio/'
+    // Using a custom domain on GitHub Pages; ensure absolute paths from root
+    // See: https://vitejs.dev/guide/build.html#public-base-path
+    config.base = '/'
   }
   
   return config
