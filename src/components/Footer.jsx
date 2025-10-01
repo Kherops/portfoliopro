@@ -7,7 +7,7 @@ const Footer = () => {
   }
 
   const handleCVOpen = () => {
-    window.open('/CV LOUIS PROTON 19.09.2025.pdf', '_blank')
+    window.open('/CV_LOUIS_PROTON', '_blank')
   }
 
   return (
