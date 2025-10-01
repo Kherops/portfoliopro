@@ -1,33 +1,41 @@
 import React from 'react'
-import { Code, Database, Settings, Globe } from 'lucide-react'
+import { Code, Database, Settings, Globe, Shield } from 'lucide-react'
 
 const About = () => {
   const languages = [
-    { name: 'Français', level: 'Natif' },
-    { name: 'Anglais', level: 'Courant (B2)' },
-    { name: 'Portugais', level: 'Très bonne compréhension' }
+    { name: 'Français', level: 'C2 - Natif' },
+    { name: 'Anglais', level: 'C1 - Avancé' },
+    { name: 'Portugais', level: 'B1 - Intermédiaire' }
   ]
 
+  // ---- Stacks mises à jour ----
   const skills = {
+    pentest: [
+      'Kali Linux', 'Nmap', 'Wireshark', 'Burp Suite',
+      'Metasploit', 'Nessus', 'Hydra', 'sqlmap',
+      'Gobuster/FFUF', 'enum4linux', 'smbclient/smbmap',
+      'Impacket', 'BloodHound/SharpHound', 'Wordlists & fuzzing'
+    ],
     frontend: [
-      'React', 'JavaScript ES6+', 'HTML5', 'CSS3', 'Tailwind CSS', 
-      'Bootstrap', 'Responsive Design', 'UI/UX Design'
+      'React', 'JavaScript ES6+', 'HTML5', 'CSS3',
+      'Tailwind CSS', 'Vite', 'Responsive UI'
     ],
     backend: [
-      'Node.js', 'Express.js', 'PHP', 'MongoDB', 'MySQL', 
-      'REST API', 'JWT Authentication', 'Stripe API'
+      'Node.js', 'Express.js', 'Python', 'FastAPI',
+      'MySQL', 'MongoDB', 'REST API', 'JWT Auth'
     ],
     tools: [
-      'Git/GitHub', 'Vite', 'VS Code', 'Figma', 'Postman', 
-      'Linux', 'Docker', 'GitHub Pages', 'Netlify'
+      'Git & GitHub', 'Linux (Debian/Ubuntu/Kali)', 'Docker',
+      'VirtualBox/VMware', 'VS Code', 'Postman',
+      'Nginx/Apache', 'GitHub Pages/Netlify'
     ]
   }
 
   const interests = [
-    'Cybersécurité & Ethical Hacking',
-    'Hardware',
-    'Mécanique',
-    'Jiu-jitsu Brésilien'
+    'Cybersécurité (TryHackMe, HackTheBox, CTF)',
+    'Homelab & hardware (montage, virtualisation, tests sécu)',
+    'Jiu-Jitsu Brésilien',
+    'Cyclisme, running, crossfit, force & musculation'
   ]
 
   return (
@@ -38,7 +46,7 @@ const About = () => {
             À propos
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Découvrez mon parcours, mes compétences et ce qui me passionne dans le développement et la cybersécurité.
+            Découvrez mon parcours, mes compétences et ce qui me passionne dans la cybersécurité et le développement.
           </p>
         </div>
 
@@ -52,19 +60,15 @@ const About = () => {
               </h3>
               <div className="prose prose-lg text-gray-600 dark:text-gray-300 space-y-4">
                 <p>
-                  Passionné par le développement web depuis mes études, j'ai obtenu un Bachelor en 
-                  Conception Développement d'Applications qui m'a donné les bases solides pour évoluer 
-                  dans cet univers en constante évolution.
+                  Passionné de cybersécurité offensive, je prépare un MSc Pro en Cybersécurité à Epitech Nice
+                  (eJPT obtenu, préparation OSCP – passage prévu 2026).
+                  Issu du développement web (Bachelor Concepteur Développeur d’Applications),
+                  j’ai appliqué ces bases sur des projets concrets pour Seadoo Proshop.
                 </p>
                 <p>
-                  Pendant deux ans, j'ai eu l'opportunité de travailler sur des projets concrets pour 
-                  Seadoo Proshop, me permettant d'acquérir une expérience pratique du développement 
-                  full-stack et de la gestion de projets web.
-                </p>
-                <p>
-                  Aujourd'hui, je me dirige vers la cybersécurité avec une formation spécialisée chez 
-                  Epitech. Cette transition naturelle me permet de combiner ma passion pour le code 
-                  avec l'enjeu crucial de la sécurité numérique.
+                  Aujourd’hui, je combine <strong>développement + sécurité</strong> pour analyser et tester
+                  les systèmes avec rigueur. Objectif : renforcer la sécurité des organisations
+                  par une approche pratique et exigeante.
                 </p>
               </div>
             </div>
@@ -92,8 +96,26 @@ const About = () => {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Compétences techniques
               </h3>
-              
+
               <div className="space-y-6">
+                {/* Pentest & Security */}
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <Shield className="text-accent" size={20} />
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Pentest & sécurité</h4>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {skills.pentest.map((skill, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
                 {/* Frontend */}
                 <div>
                   <div className="flex items-center gap-2 mb-3">
@@ -134,7 +156,7 @@ const About = () => {
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <Settings className="text-accent" size={20} />
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Outils & Environnements</h4>
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Outils & environnements</h4>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {skills.tools.map((skill, index) => (
@@ -155,7 +177,7 @@ const About = () => {
               <div className="flex items-center gap-2 mb-4">
                 <Globe className="text-accent" size={20} />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Centres d'intérêt
+                  Centres d’intérêt
                 </h3>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

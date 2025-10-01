@@ -32,20 +32,20 @@ const Hero = () => {
           {/* Content */}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white mb-6 animate-fade-in">
-              Développeur Web & Futur Étudiant en{' '}
+              Développeur Web & Étudiant en{' '}
               <span className="text-accent">Cybersécurité</span>
             </h1>
             
             <div className="text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed space-y-4 animate-slide-up">
               <p>
-                Diplômé d'un Bachelor en Conception Développement d'Applications, 
+                Diplômé d'un titre RNCP6 en Conception Développement d'Applications, 
                 j'ai travaillé pendant deux ans sur des projets concrets pour Seadoo Proshop : 
                 site vitrine, e-commerce, applications React.
               </p>
               
               <p>
                 Je poursuis aujourd'hui ma spécialisation en cybersécurité avec une année de prépa MSc Pro chez Epitech, 
-                suivie d'un mastère en cybersécurité.
+                suivie d'un master of science à Epitech Nice.
               </p>
               
               <p>
