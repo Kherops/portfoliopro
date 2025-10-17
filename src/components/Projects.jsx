@@ -15,6 +15,7 @@ const Projects = () => {
       bgColor: "bg-white",
       textColor: "text-gray-900"
     },
+    
     {
       id: 2,
       name: "Portfolio 2.0 Cyberpunk",
@@ -37,6 +38,18 @@ const Projects = () => {
       url: "https://shop-seadoo.fr",
       image: "/shopseadoo.png",
       bgColor: "bg-gradient-to-br from-green-500 to-emerald-500",
+      textColor: "text-white"
+    },
+    {
+      id: 4,
+      name: "CV Numérique Interactif",
+      type: "Digital Resume",
+      description: "CV interactif avec interface terminal bash-like permettant de naviguer dans les sections via des commandes bash (ls, cd, cat).",
+      role: "Conception UI/UX, développement JavaScript, simulation Capture the Flag",
+      technologies: ["HTML5", "CSS3", "JavaScript", "CTF"],
+      url: "https://kherops.github.io/digital-resume/",
+      image: "digital_resume.png",
+      bgColor: "bg-gradient-to-br from-slate-800 to-slate-900",
       textColor: "text-white"
     }
   ]
