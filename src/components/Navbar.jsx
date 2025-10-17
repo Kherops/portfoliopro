@@ -8,15 +8,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
   const handleCVOpen = () => {
     // Open CV in new window
-<<<<<<< HEAD
-<<<<<<< HEAD
-    window.open('/CV_LOUIS_PROTON.pdf', '_blank')
-=======
-    window.open('public/CV LOUIS PROTON 16.09.2025.pdf', '_blank')
->>>>>>> 12fbb07 (Clean: stop tracking node_modules + maj contenu)
-=======
-    window.open('public/CV LOUIS PROTON 19.09.2025.pdf', '_blank')
->>>>>>> e242fd6 ( changes on everything)
+    window.open('/CV LOUIS PROTON 19.09.2025.pdf', '_blank')
   }
 
   return (
