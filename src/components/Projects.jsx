@@ -38,6 +38,18 @@ const Projects = () => {
       image: "/shopseadoo.png",
       bgColor: "bg-gradient-to-br from-green-500 to-emerald-500",
       textColor: "text-white"
+    },
+    {
+      id: 4,
+      name: "CV Numérique Interactif",
+      type: "Digital Resume",
+      description: "CV interactif avec terminal bash permettant de naviguer dans les sections via des commandes Linux (ls, cd, cat).",
+      role: "Conception UI/UX, développement JavaScript, simulation terminal, simulation Capture the Flag simple",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Bash", "CTF"],
+      url: "https://kherops.github.io/digital-resume/",
+      image: "public/digital_resume.png",
+      bgColor: "bg-gradient-to-br from-slate-800 to-slate-900",
+      textColor: "text-white"
     }
   ]
 
