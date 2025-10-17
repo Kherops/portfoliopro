@@ -7,7 +7,11 @@ const Footer = () => {
   }
 
   const handleCVOpen = () => {
+<<<<<<< HEAD
     window.open('/CV_LOUIS_PROTON', '_blank')
+=======
+    window.open('/CV LOUIS PROTON 19.09.2025.pdf', '_blank')
+>>>>>>> e242fd6 ( changes on everything)
   }
 
   return (
