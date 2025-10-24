@@ -35,7 +35,7 @@ const Projects = () => {
       description: "Plateforme e-commerce complète avec gestion des commandes, paiements sécurisés et interface d'administration.",
       role: "Développement full-stack, intégration API, gestion BDD",
       technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe", "JWT"],
-      url: "https://shop-seadoo.fr",
+      url: "https://shop-seadoo.com",
       image: "/shopseadoo.png",
       bgColor: "bg-gradient-to-br from-green-500 to-emerald-500",
       textColor: "text-white"
